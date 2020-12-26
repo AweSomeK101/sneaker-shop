@@ -1,0 +1,81 @@
+@use "config" as *;
+
+.itema {
+  width: 250px;
+  height: 350px;
+  border-radius: 30px;
+  margin: 5rem 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  color: $black;
+  flex: 0 1 250px;
+  margin: 2rem 1rem;
+  position: relative;
+  &-img {
+    width: 100%;
+    margin-top: 50px;
+    object-fit: contain;
+    object-position: center;
+    transform: rotateZ(20deg);
+  }
+  .shoe-brand {
+    padding-left: 10px;
+    color: rgba($color: $black, $alpha: 0.6);
+  }
+  // padding-left: 10px;
+  // position: absolute;
+  h3 {
+    padding-left: 10px;
+    // font-size: 1.5rem;
+  }
+  .shoe-price {
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+    // left: 50%;
+    // transform: translate(50%, 50%);
+    margin: auto;
+  }
+}
+
+.item {
+  width: 250px;
+  height: 350px;
+  border-radius: 30px;
+  margin: 5rem 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  color: $black;
+  flex: 0 1 250px;
+  margin: 2rem 1rem;
+  position: relative;
+  display: grid;
+  align-content: space-between;
+  &-img {
+    width: 100%;
+    margin-top: 30px;
+    object-fit: contain;
+    object-position: center;
+    transform: rotateZ(20deg);
+  }
+  .shoe-brand {
+    padding-left: 10px;
+    color: rgba($color: $black, $alpha: 0.6);
+  }
+  // padding-left: 10px;
+  // position: absolute;
+  h3 {
+    padding-left: 10px;
+    font-size: 1.5rem;
+  }
+  .shoe-price {
+    // position: absolute;
+    // width: 120%;
+    // bottom: 5%;
+    // left: 50%;
+    // transform: translate(50%, 50%);
+    text-align: center;
+    background: $black;
+    color: white;
+  }
+}

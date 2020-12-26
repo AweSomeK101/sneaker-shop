@@ -1,0 +1,22 @@
+{
+  "name": "6_sneaker_shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "gh-pages": "^3.1.0",
+    "sass": "^1.30.0"
+  },
+  "dependencies": {
+    "fullpage": "^1.5.1",
+    "fullpage.js": "^3.0.9",
+    "glider-js": "^1.7.3"
+  }
+}

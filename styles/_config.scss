@@ -1,0 +1,21 @@
+$green: #379634;
+$black: #080700;
+$white: #f8f8f8;
+$blue: #33658a;
+$tblue: #424154;
+$blackc: #4c4c4c;
+$grey: #f5f5f5;
+
+$font-1: run;
+$font-2: "Big Shoulders Stencil Text", cursive;
+
+@font-face {
+  font-family: run;
+  src: url("../font/RunMedium-2VJo.woff");
+}
+
+#fp-nav {
+  span {
+    background-color: $green !important;
+  }
+}

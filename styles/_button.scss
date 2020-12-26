@@ -1,0 +1,41 @@
+@use "config" as *;
+
+%btn {
+  display: inline-block;
+  font-family: "Big Shoulders Stencil Text", cursive;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  outline: none;
+  border: 3px solid;
+  border-radius: 15px;
+  font-size: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+button {
+  font-family: $font-1;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-hero {
+  @extend %btn;
+  border-color: $green;
+  background: transparent;
+  color: $green;
+  font-weight: 800;
+  &:hover {
+    border-color: transparent;
+    background: $green;
+    color: $white;
+  }
+}
+
+.btn-img {
+  @extend %btn;
+  font-size: 1.5rem;
+  border-color: $green;
+}

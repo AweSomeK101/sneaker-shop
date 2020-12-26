@@ -1,0 +1,95 @@
+@use 'config' as *;
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+  letter-spacing: 1px;
+  &:hover {
+    color: $green;
+  }
+}
+
+h1 {
+  color: $green;
+  font-size: 6rem;
+  padding: 1rem 0;
+  font-family: $font-2;
+}
+
+h2 {
+  color: $green;
+  font-size: 3rem;
+  padding: 1rem 0;
+  font-family: $font-2;
+}
+
+p {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+}
+
+img {
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex-center {
+  @extend .flex;
+  justify-content: center;
+}
+.flex-around {
+  @extend .flex;
+  justify-content: space-around;
+}
+.flex-between {
+  @extend .flex;
+  justify-content: space-between;
+}
+
+.grid-minmax {
+  display: grid;
+  place-items: center;
+  grid-template-columns: minmax(300px, 40%) 1fr;
+}
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+
+input {
+  font-family: $font-1;
+  font-size: 1rem;
+  padding: 1rem 0.6rem;
+  border: none;
+  background: transparent;
+  outline: none;
+  &::placeholder {
+    color: $green;
+    opacity: 1;
+  }
+  &:required {
+    box-shadow: none;
+  }
+}
+
+.hide {
+  display: none;
+}
