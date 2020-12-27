@@ -17,13 +17,13 @@
     font-size: 0.6rem;
   }
 
-  .hero {
-    &-text {
-      h1 {
-        font-size: 5rem;
-      }
-    }
-  }
+  // .hero {
+  //   &-text {
+  //     h1 {
+  //       font-size: 5rem;
+  //     }
+  //   }
+  // }
 
   section {
     min-height: 100vh;
@@ -75,7 +75,7 @@
   }
 }
 
-@media (max-width: 350px) and (orientation: portrait) {
+@media only screen and (max-width: 450px) and (orientation: portrait) {
   body .hero {
     &-container {
       display: flex;
@@ -88,6 +88,9 @@
     }
     &-img {
       height: 250px;
+    }
+    &-img {
+      height: 100%;
     }
   }
 
